@@ -1,6 +1,6 @@
 // src/App.js
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React, { useState,  } from 'react';
+// import axios from 'axios';
 import CardForm from './components/CardForm';
 import CardForm2 from './components/CardForm2';
 import CardForm3 from './components/CardForm3';
@@ -11,16 +11,16 @@ const App = () => {
   const [message, setMessage] = useState('');
 
   // Fetch cards on component mount
-  useEffect(() => {
-    axios
-      .get('https://newsapibackend-746u.onrender.com/api/slider1')
-      .then((response) => {
-        setCards(response.data);
-      })
-      .catch((error) => {
-        console.error('Error fetching cards:', error);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get('https://newsapibackend-746u.onrender.com/api/slider1')
+  //     .then((response) => {
+  //       setCards(response.data);
+  //     })
+  //     .catch((error) => {
+  //       console.error('Error fetching cards:', error);
+  //     });
+  // }, []);
 
   return (
 
