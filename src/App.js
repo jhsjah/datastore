@@ -13,7 +13,7 @@ const App = () => {
   // Fetch cards on component mount
   useEffect(() => {
     axios
-      .get('https://newsapibackend-746u.onrender.com/api/slider1')
+      .get('https://newsapibackend-746u.onrender.com/api')
       .then((response) => {
         setCards(response.data);
       })
