@@ -37,6 +37,18 @@ const App = () => {
 
 
       
+<h1>Private Sector</h1>
+{message && <p>{message}</p>}
+
+<CardForm2 setCards={setCards} setMessage={setMessage} />
+
+
+
+      
+<h1>Other Sector</h1>
+{message && <p>{message}</p>}
+
+<CardForm3 setCards={setCards} setMessage={setMessage} />
 
 
 </div>
