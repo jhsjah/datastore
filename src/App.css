@@ -1,0 +1,251 @@
+/* General styling for the app */
+.App {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f7f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Heading Styling */
+h1 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Form Styling */
+form {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+form div {
+  margin-bottom: 15px;
+}
+
+form label {
+  font-size: 14px;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-top: 5px;
+}
+
+form textarea {
+  height: 100px;
+  resize: none;
+}
+
+form button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+form button:hover {
+  background-color: #45a049;
+}
+
+/* Message Styling */
+p {
+  color: #d9534f;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px 0;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+table th {
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f1f1f1;
+}
+
+table a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+table a:hover {
+  text-decoration: underline;
+}
+
+table img {
+  border-radius: 4px;
+}
+
+/* For No Cards Message */
+table td[colspan='4'] {
+  text-align: center;
+  color: #777;
+  font-size: 14px;
+  padding: 20px 0;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+  /* General App Styling */
+  .App {
+    padding: 10px;
+    min-height: auto;
+  }
+
+  /* Heading Styling */
+  h1 {
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  /* Form Styling */
+  form {
+    padding: 15px;
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 16px; /* Slightly larger font for better readability on mobile */
+  }
+
+  form button {
+    padding: 10px 15px;
+    font-size: 14px;
+  }
+
+  /* Table Styling */
+  table {
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  table th,
+  table td {
+    padding: 8px;
+    font-size: 14px; /* Smaller font size for table cells */
+  }
+
+  table th {
+    font-size: 16px; /* Slightly larger font for headers */
+  }
+
+  /* Hide less important columns on mobile */
+  table th:nth-child(3),
+  table td:nth-child(3) {
+    display: none;
+  }
+
+  /* Message Styling */
+  p {
+    font-size: 14px;
+  }
+
+  /* Adjust images in tables */
+  table img {
+    max-width: 50px; /* Smaller images for mobile */
+    height: auto;
+  }
+
+  /* No Cards Message */
+  table td[colspan='4'] {
+    font-size: 12px;
+    padding: 15px 0;
+  }
+}
+
+/* Extra Small Devices (e.g., phones smaller than 400px) */
+@media (max-width: 400px) {
+  h1 {
+    font-size: 20px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  form input,
+  form textarea {
+    font-size: 14px;
+  }
+
+  form button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+
+  table th,
+  table td {
+    padding: 6px;
+    font-size: 12px;
+  }
+
+  table th {
+    font-size: 14px;
+  }
+
+  table img {
+    max-width: 40px;
+  }
+}
