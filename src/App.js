@@ -13,7 +13,7 @@ const App = () => {
   // Fetch cards on component mount
   useEffect(() => {
     axios
-      .get('https://newsapibackend-746u.onrender.com/api')
+      .get('https://newsapibackend-746u.onrender.com/api/slider1')
       .then((response) => {
         setCards(response.data);
       })
@@ -37,18 +37,6 @@ const App = () => {
 
 
       
-<h1>Private Sector</h1>
-{message && <p>{message}</p>}
-
-<CardForm2 setCards={setCards} setMessage={setMessage} />
-
-
-
-      
-<h1>Other Sector</h1>
-{message && <p>{message}</p>}
-
-<CardForm3 setCards={setCards} setMessage={setMessage} />
 
 
 </div>
