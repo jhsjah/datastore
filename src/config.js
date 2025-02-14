@@ -1,6 +1,12 @@
-const API_BASE_URL = process.env.API_BASE_URL;
+import axios from 'axios';
 
-fetch(API_BASE_URL)
-  .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));
+export const API_BASE_URL = 'https://newsapibackend-746u.onrender.com/api';
+
+// Example: Fetching data from /api/slider1
+axios.get(`${API_BASE_URL}/slider1`)
+  .then(response => {
+    console.log('Response:', response.data);
+  })
+  .catch(error => {
+    console.error('Error:', error);
+  });
