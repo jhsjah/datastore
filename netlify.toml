@@ -1,4 +1,4 @@
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/api/*"
+  to = "https://newsapibackend-746u.onrender.com/api/:splat"
   status = 200
